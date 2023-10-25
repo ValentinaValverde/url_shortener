@@ -14,7 +14,6 @@ class Url(models.Model):
     title = models.CharField(null=True)
     long_url = models.CharField(null=True)
     short_url = models.CharField(null=True)
-
     user_id = models.ForeignKey(User, on_delete=models.CASCADE, to_field='username')
 
 
